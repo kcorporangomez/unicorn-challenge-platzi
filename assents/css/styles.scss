@@ -1,44 +1,87 @@
 $primary-color: #1A1A4C;
 $secundary-color: #E92042;
+$third-color: #0D0139;
 $bg-color: #F7FCFF;
 $content-color: #FCFCFC;
 
-body {
+html, body {
   font-family: 'Dosis', sans-serif;
   font-size: 12px;
   background-color: $bg-color;
-
+  scroll-behavior: smooth;
 
   #app {
     .section {
-      position: absolute;
+      position: fixed;
       width: 120px;
       height: 700px;
       left: 0px;
       top: 0px;
+      padding: 1rem;
+      background-color: $content-color;
       box-shadow: 2px 0px 4px rgba(157, 168, 190, 0.5);
+      z-index: 1;
+
+      #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: width .3s;
+      }
+
+      #logo:hover {
+        width: 70px;
+        cursor: pointer;
+      }
+
+      ul {
+        position: absolute;
+        width: 28px;
+        height: 240px;
+        left: 46px;
+        top: 350px;
+
+        li {
+          width: 28px;
+          height: 28px;
+          margin-top: 40px;
+
+          img {
+            width: 24px;
+            transition: width .3s;
+          }
+
+          img:hover {
+            width: 28px;
+            cursor: pointer;
+          }
+        }
+      }
     }
 
     .main {
       position: absolute;
       width: 100%;
-      height: 300px;
+      padding: 0;
       left: 120px;
-      top: 0px;
-      box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5);
 
       .headercontent {
+        width: 100%;
+        height: 300px;
+        box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5);
+        background-color: $content-color;
+
         .level {
           position: absolute;
           width: 266px;
           height: 46px;
           left: 750px;
           top: 12px;
-          font-size: 1.1rem;
+          font-size: 1.5rem;
           font-weight: 500;
 
-          .level-right{
-            a{
+          .level-right {
+            a {
               color: $primary-color;
               text-decoration: none;
               margin-left: 48px;
@@ -51,33 +94,10 @@ body {
         }
       }
 
-      .level{
-        .content-element{
-          position: absolute;
-          width: 476px;
-          height: 216px;
-          left: 240px;
-          top: 380px;
-
-          .card1, .card2 {
-            position: absolute;
-            width: 360px;
-            height: 96px;
-            left: 240px;
-            top: 380px;
-            background: #FCFCFC;
-            box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
-            border-radius: 8px;
-          }
-        }
-      }
-
-
       #unicorn {
         margin: 56px 0 0 135px;
-        font-style: normal;
         font-weight: bold;
-        font-size: 64px;
+        font-size: 6rem;
         line-height: 81px;
         color: #1A1A4C;
       }
@@ -88,10 +108,195 @@ body {
         border-radius: 8px;
         padding: 102px;
         background-color: $secundary-color;
-        margin: 98px 0px 0px -120px;
+        margin: 119px 0px 0px -120px;
         box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);;
       }
 
+      .level {
+        .content-element1 {
+          position: absolute;
+          width: 476px;
+          height: 216px;
+          left: 150px;
+          top: 386px;
+
+          .card1 {
+            display: flex;
+            position: absolute;
+            width: 360px;
+            height: 96px;
+            background: #FCFCFC;
+            box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+            border-radius: 8px;
+            padding: 20px;
+
+            img {
+              width: 48px;
+              height: 48px;
+              margin-left: 5px;
+            }
+
+            div {
+              margin-left: 25px;
+
+              p {
+                font-size: 1.5rem;
+                color: $primary-color;
+              }
+
+              .p1 {
+                font-weight: bold;
+              }
+            }
+          }
+
+          .card2 {
+            display: flex;
+            position: absolute;
+            width: 360px;
+            height: 96px;
+            left: 115px;
+            top: 120px;
+            background: #FCFCFC;
+            box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+            border-radius: 8px;
+            padding: 20px;
+
+            img {
+              width: 48px;
+              height: 48px;
+              margin-left: 5px;
+            }
+
+            div {
+              margin-left: 25px;
+
+              p {
+                font-size: 1.5rem;
+                color: $primary-color;
+              }
+
+              .p1 {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+      .level {
+        .content-element2 {
+          position: absolute;
+          width: 717px;
+          height: 433px;
+          left: 150px;
+          top: 570px;
+
+          img {
+            margin-left: 578px;
+            animation: float 3s ease-in-out infinite;
+          }
+
+          @keyframes float {
+            0% {
+              transform: translateY(0);
+            }
+
+            65% {
+              transform: translateY(2.5rem);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 3.5rem;
+            color: $primary-color;
+          }
+
+          .card3 {
+            width: 476px;
+            height: 188px;
+            left: 240px;
+            top: 216px;
+            background: #FCFCFC;
+            box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 24px;
+
+            p {
+              font-weight: 500;
+              font-size: 1.5rem;
+              line-height: 32px;
+            }
+
+            .p2 {
+              font-weight: bold;
+              font-size: 1.5rem;
+              line-height: 32px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+
+      .level {
+        .content-element3 {
+          position: absolute;
+          width: 676px;
+          height: 339px;
+          left: 240px;
+          top: 1120px;
+          text-align: center;
+
+          div {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 16px;
+
+            div {
+              display: flex;
+              align-items: center;
+              width: 300px;
+              height: 250px;
+              background: $third-color;
+              box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+              border-radius: 8px;
+            }
+
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 3.5rem;
+            color: $primary-color;
+          }
+        }
+      }
+
+      footer {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        top: 1568px;
+        background: #E92042;
+        text-align: center;
+
+        p {
+          font-size: 1.5rem;
+          line-height: 40px;
+          font-weight: bold;
+          color: $primary-color;
+
+          a {
+            color: #FFFFFF;
+          }
+        }
+      }
     }
+
   }
 }

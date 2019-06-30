@@ -6,21 +6,28 @@
    <title>Unicorn Challenge</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="animate.min.css">
    <link rel="stylesheet" href="./assents/css/styles.css">
    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
 <div id="app" class="columns is-variable bd-klmn-columns">
    <div class="section column is-2">
-      <img src="assents/icons/unicorn.png" height="64" width="64"/>
+      <img id="logo" src="assents/icons/unicorn.png" height="64" width="64"/>
+      <ul>
+         <li><img src="./assents/icons/instagram.png" alt=""></li>
+         <li><img src="./assents/icons/twitter.png" alt=""></li>
+         <li><img src="./assents/icons/youtube.png" alt=""></li>
+         <li><img src="./assents/icons/whatsapp.png" alt=""></li>
+      </ul>
    </div>
    <div class="main column is-10">
       <header class="headercontent">
          <nav class="level">
             <div class="level-right">
-               <a><p class="level-item">Inicio</p></a>
-               <a><p class="level-item">Sobre mí</p></a>
-               <a><p class="level-item">Portafolio</p></a>
+               <a href="#app"><p class="level-item">Inicio</p></a>
+               <a href="#aboutMe"><p class="level-item">Sobre mí</p></a>
+               <a href="#Proyects"><p class="level-item">Portafolio</p></a>
             </div>
          </nav>
          <div class="columns">
@@ -31,17 +38,47 @@
          </div>
       </header>
       <div class="level">
-         <div class="content-element container">
+         <div class="content-element1 container">
             <div class="card1">
                <img src="./assents/icons/development.png" alt="">
                <div>
-                  <p>Desarrollo Web</p>
+                  <p class="p1">Desarrollo Web</p>
                   <p>HTML + CSS + Responsive Design</p>
                </div>
             </div>
-            <div class="card2"></div>
+            <div class="card2">
+               <img src="./assents/icons/design.png" alt="">
+               <div>
+                  <p class="p1">Diseño Web</p>
+                  <p>UI/UX + Adobe XD/Figma + Zeplin</p>
+               </div>
+            </div>
          </div>
       </div>
+      <div class="level">
+         <div class="content-element2 container">
+            <img src="./assents/icons/rocket.png" alt="">
+            <p id="aboutMe">Sobre mí</p>
+            <div class="card3">
+               <p>Aquí puedes escribir algo bien chido sobre tí, lo que te gusta y lo que no. Los lugares que quieres
+                  conocer o la comida que más disfrutas, incluso puedes hablar de tus macotas.</p>
+               <p class="p2"> - ¿Dónde quieres trabajar?</p>
+            </div>
+         </div>
+      </div>
+      <div class="level">
+         <div class="content-element3 container">
+            <p id="Proyects">Proyectos</p>
+            <div>
+               <div class="animated pulse"><img src="./assents/img/proyect2.png" alt=""></div>
+               <div class="animated pulse"><img src="./assents/img/proyect1.png" alt=""></div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <p>Creado por <a href="https://www.linkedin.com/in/kcorporangomez">Kelvin Corporán</a> - República Dominicana
+            🇩🇴</p>
+      </footer>
    </div>
 </div>
 </body>

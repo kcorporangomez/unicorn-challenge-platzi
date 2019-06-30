@@ -1,64 +1,203 @@
-body {
+html, body {
   font-family: 'Dosis', sans-serif;
   font-size: 12px;
-  background-color: #F7FCFF; }
-  body #app .section {
-    position: absolute;
+  background-color: #F7FCFF;
+  scroll-behavior: smooth; }
+  html #app .section, body #app .section {
+    position: fixed;
     width: 120px;
     height: 700px;
     left: 0px;
     top: 0px;
-    box-shadow: 2px 0px 4px rgba(157, 168, 190, 0.5); }
-  body #app .main {
+    padding: 1rem;
+    background-color: #FCFCFC;
+    box-shadow: 2px 0px 4px rgba(157, 168, 190, 0.5);
+    z-index: 1; }
+    html #app .section #logo, body #app .section #logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transition: width .3s; }
+    html #app .section #logo:hover, body #app .section #logo:hover {
+      width: 70px;
+      cursor: pointer; }
+    html #app .section ul, body #app .section ul {
+      position: absolute;
+      width: 28px;
+      height: 240px;
+      left: 46px;
+      top: 350px; }
+      html #app .section ul li, body #app .section ul li {
+        width: 28px;
+        height: 28px;
+        margin-top: 40px; }
+        html #app .section ul li img, body #app .section ul li img {
+          width: 24px;
+          transition: width .3s; }
+        html #app .section ul li img:hover, body #app .section ul li img:hover {
+          width: 28px;
+          cursor: pointer; }
+  html #app .main, body #app .main {
     position: absolute;
     width: 100%;
-    height: 300px;
-    left: 120px;
-    top: 0px;
-    box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5); }
-    body #app .main .headercontent .level {
-      position: absolute;
-      width: 266px;
-      height: 46px;
-      left: 750px;
-      top: 12px;
-      font-size: 1.1rem;
-      font-weight: 500; }
-      body #app .main .headercontent .level .level-right a {
-        color: #1A1A4C;
-        text-decoration: none;
-        margin-left: 48px; }
-      body #app .main .headercontent .level .level-right a:hover {
-        font-weight: 600; }
-    body #app .main .level .content-element {
-      position: absolute;
-      width: 476px;
-      height: 216px;
-      left: 240px;
-      top: 380px; }
-      body #app .main .level .content-element .card1, body #app .main .level .content-element .card2 {
+    padding: 0;
+    left: 120px; }
+    html #app .main .headercontent, body #app .main .headercontent {
+      width: 100%;
+      height: 300px;
+      box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5);
+      background-color: #FCFCFC; }
+      html #app .main .headercontent .level, body #app .main .headercontent .level {
         position: absolute;
-        width: 360px;
-        height: 96px;
-        left: 240px;
-        top: 380px;
-        background: #FCFCFC;
-        box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
-        border-radius: 8px; }
-    body #app .main #unicorn {
+        width: 266px;
+        height: 46px;
+        left: 750px;
+        top: 12px;
+        font-size: 1.5rem;
+        font-weight: 500; }
+        html #app .main .headercontent .level .level-right a, body #app .main .headercontent .level .level-right a {
+          color: #1A1A4C;
+          text-decoration: none;
+          margin-left: 48px; }
+        html #app .main .headercontent .level .level-right a:hover, body #app .main .headercontent .level .level-right a:hover {
+          font-weight: 600; }
+    html #app .main #unicorn, body #app .main #unicorn {
       margin: 56px 0 0 135px;
-      font-style: normal;
       font-weight: bold;
-      font-size: 64px;
+      font-size: 6rem;
       line-height: 81px;
       color: #1A1A4C; }
-    body #app .main .unicornImg {
+    html #app .main .unicornImg, body #app .main .unicornImg {
       width: 300px;
       height: 300px;
       border-radius: 8px;
       padding: 102px;
       background-color: #E92042;
-      margin: 98px 0px 0px -120px;
+      margin: 119px 0px 0px -120px;
       box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5); }
+    html #app .main .level .content-element1, body #app .main .level .content-element1 {
+      position: absolute;
+      width: 476px;
+      height: 216px;
+      left: 150px;
+      top: 386px; }
+      html #app .main .level .content-element1 .card1, body #app .main .level .content-element1 .card1 {
+        display: flex;
+        position: absolute;
+        width: 360px;
+        height: 96px;
+        background: #FCFCFC;
+        box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+        border-radius: 8px;
+        padding: 20px; }
+        html #app .main .level .content-element1 .card1 img, body #app .main .level .content-element1 .card1 img {
+          width: 48px;
+          height: 48px;
+          margin-left: 5px; }
+        html #app .main .level .content-element1 .card1 div, body #app .main .level .content-element1 .card1 div {
+          margin-left: 25px; }
+          html #app .main .level .content-element1 .card1 div p, body #app .main .level .content-element1 .card1 div p {
+            font-size: 1.5rem;
+            color: #1A1A4C; }
+          html #app .main .level .content-element1 .card1 div .p1, body #app .main .level .content-element1 .card1 div .p1 {
+            font-weight: bold; }
+      html #app .main .level .content-element1 .card2, body #app .main .level .content-element1 .card2 {
+        display: flex;
+        position: absolute;
+        width: 360px;
+        height: 96px;
+        left: 115px;
+        top: 120px;
+        background: #FCFCFC;
+        box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+        border-radius: 8px;
+        padding: 20px; }
+        html #app .main .level .content-element1 .card2 img, body #app .main .level .content-element1 .card2 img {
+          width: 48px;
+          height: 48px;
+          margin-left: 5px; }
+        html #app .main .level .content-element1 .card2 div, body #app .main .level .content-element1 .card2 div {
+          margin-left: 25px; }
+          html #app .main .level .content-element1 .card2 div p, body #app .main .level .content-element1 .card2 div p {
+            font-size: 1.5rem;
+            color: #1A1A4C; }
+          html #app .main .level .content-element1 .card2 div .p1, body #app .main .level .content-element1 .card2 div .p1 {
+            font-weight: bold; }
+    html #app .main .level .content-element2, body #app .main .level .content-element2 {
+      position: absolute;
+      width: 717px;
+      height: 433px;
+      left: 150px;
+      top: 570px; }
+      html #app .main .level .content-element2 img, body #app .main .level .content-element2 img {
+        margin-left: 578px;
+        animation: float 3s ease-in-out infinite; }
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  65% {
+    transform: translateY(2.5rem); }
+  100% {
+    transform: translateY(0); } }
+      html #app .main .level .content-element2 p, body #app .main .level .content-element2 p {
+        font-weight: bold;
+        font-size: 3.5rem;
+        color: #1A1A4C; }
+      html #app .main .level .content-element2 .card3, body #app .main .level .content-element2 .card3 {
+        width: 476px;
+        height: 188px;
+        left: 240px;
+        top: 216px;
+        background: #FCFCFC;
+        box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+        border-radius: 8px;
+        padding: 25px;
+        margin-top: 24px; }
+        html #app .main .level .content-element2 .card3 p, body #app .main .level .content-element2 .card3 p {
+          font-weight: 500;
+          font-size: 1.5rem;
+          line-height: 32px; }
+        html #app .main .level .content-element2 .card3 .p2, body #app .main .level .content-element2 .card3 .p2 {
+          font-weight: bold;
+          font-size: 1.5rem;
+          line-height: 32px;
+          margin-left: 20px; }
+    html #app .main .level .content-element3, body #app .main .level .content-element3 {
+      position: absolute;
+      width: 676px;
+      height: 339px;
+      left: 240px;
+      top: 1120px;
+      text-align: center; }
+      html #app .main .level .content-element3 div, body #app .main .level .content-element3 div {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 16px; }
+        html #app .main .level .content-element3 div div, body #app .main .level .content-element3 div div {
+          display: flex;
+          align-items: center;
+          width: 300px;
+          height: 250px;
+          background: #0D0139;
+          box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+          border-radius: 8px; }
+      html #app .main .level .content-element3 p, body #app .main .level .content-element3 p {
+        font-weight: bold;
+        font-size: 3.5rem;
+        color: #1A1A4C; }
+    html #app .main footer, body #app .main footer {
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      top: 1568px;
+      background: #E92042;
+      text-align: center; }
+      html #app .main footer p, body #app .main footer p {
+        font-size: 1.5rem;
+        line-height: 40px;
+        font-weight: bold;
+        color: #1A1A4C; }
+        html #app .main footer p a, body #app .main footer p a {
+          color: #FFFFFF; }
 
 /*# sourceMappingURL=styles.css.map */

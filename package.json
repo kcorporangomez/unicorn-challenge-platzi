@@ -7,6 +7,7 @@
   "author": " Kelvin Corporan <kcorporangomez@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "bulma": "^0.7.5",
     "webpack": "^4.35.0"
   }

@@ -1,0 +1,64 @@
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  background-color: #F7FCFF; }
+  body #app .section {
+    position: absolute;
+    width: 120px;
+    height: 700px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 2px 0px 4px rgba(157, 168, 190, 0.5); }
+  body #app .main {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 120px;
+    top: 0px;
+    box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5); }
+    body #app .main .headercontent .level {
+      position: absolute;
+      width: 266px;
+      height: 46px;
+      left: 750px;
+      top: 12px;
+      font-size: 1.1rem;
+      font-weight: 500; }
+      body #app .main .headercontent .level .level-right a {
+        color: #1A1A4C;
+        text-decoration: none;
+        margin-left: 48px; }
+      body #app .main .headercontent .level .level-right a:hover {
+        font-weight: 600; }
+    body #app .main .level .content-element {
+      position: absolute;
+      width: 476px;
+      height: 216px;
+      left: 240px;
+      top: 380px; }
+      body #app .main .level .content-element .card1, body #app .main .level .content-element .card2 {
+        position: absolute;
+        width: 360px;
+        height: 96px;
+        left: 240px;
+        top: 380px;
+        background: #FCFCFC;
+        box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+        border-radius: 8px; }
+    body #app .main #unicorn {
+      margin: 56px 0 0 135px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 81px;
+      color: #1A1A4C; }
+    body #app .main .unicornImg {
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+      padding: 102px;
+      background-color: #E92042;
+      margin: 98px 0px 0px -120px;
+      box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5); }
+
+/*# sourceMappingURL=styles.css.map */

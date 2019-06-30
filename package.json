@@ -1,0 +1,13 @@
+{
+  "name": "web-unicorn-challenge",
+  "version": "1.0.0",
+  "description": "Concurso de platzi",
+  "main": "index.js",
+  "repository": "https://github.com/kcorporangomez/unicorn-challenge-platzi.git",
+  "author": " Kelvin Corporan <kcorporangomez@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "webpack": "^4.35.0"
+  }
+}

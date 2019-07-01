@@ -7,16 +7,13 @@ html, body {
     position: fixed;
     width: 120px;
     height: 700px;
-    left: 0px;
-    top: 0px;
     padding: 1rem;
     background-color: #FCFCFC;
-    box-shadow: 2px 0px 4px rgba(157, 168, 190, 0.5);
+    box-shadow: 2px 0 4px rgba(157, 168, 190, 0.5);
     z-index: 1; }
     html #app .section #logo, body #app .section #logo {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 15px auto 0 auto;
       transition: width .3s; }
     html #app .section #logo:hover, body #app .section #logo:hover {
       width: 70px;
@@ -74,8 +71,8 @@ html, body {
       border-radius: 8px;
       padding: 102px;
       background-color: #E92042;
-      margin: 119px 0px 0px -120px;
-      box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5); }
+      margin: 119px 0 0px -120px;
+      box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5); }
     html #app .main .level .content-element1, body #app .main .level .content-element1 {
       position: absolute;
       width: 476px;
@@ -88,7 +85,7 @@ html, body {
         width: 360px;
         height: 96px;
         background: #FCFCFC;
-        box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+        box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
         border-radius: 8px;
         padding: 20px; }
         html #app .main .level .content-element1 .card1 img, body #app .main .level .content-element1 .card1 img {
@@ -112,7 +109,7 @@ html, body {
         left: 115px;
         top: 120px;
         background: #FCFCFC;
-        box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+        box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
         border-radius: 8px;
         padding: 20px; }
         html #app .main .level .content-element1 .card2 img, body #app .main .level .content-element1 .card2 img {
@@ -155,7 +152,7 @@ html, body {
         left: 240px;
         top: 216px;
         background: #FCFCFC;
-        box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+        box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
         border-radius: 8px;
         padding: 25px;
         margin-top: 24px; }
@@ -187,7 +184,7 @@ html, body {
           width: 300px;
           height: 250px;
           background: #0D0139;
-          box-shadow: 0px 4px 8px rgba(157, 168, 190, 0.5);
+          box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
           border-radius: 8px; }
       html #app .main .level .content-element3 p, body #app .main .level .content-element3 p {
         font-weight: bold;

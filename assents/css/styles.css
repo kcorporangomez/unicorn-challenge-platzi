@@ -1,137 +1,141 @@
 html, body {
+  width: 100%;
   font-family: 'Dosis', sans-serif;
   font-size: 12px;
   background-color: #F7FCFF;
   scroll-behavior: smooth; }
-  html #app .section, body #app .section {
-    position: fixed;
-    width: 120px;
-    height: 700px;
-    padding: 1rem;
-    background-color: #FCFCFC;
-    box-shadow: 2px 0 4px rgba(157, 168, 190, 0.5);
-    z-index: 1; }
-    html #app .section #logo, body #app .section #logo {
-      display: block;
-      margin: 15px auto 0 auto;
-      transition: width .3s; }
-    html #app .section #logo:hover, body #app .section #logo:hover {
-      width: 70px;
-      cursor: pointer; }
-    html #app .section ul, body #app .section ul {
-      position: absolute;
-      width: 28px;
-      height: 240px;
-      top: 385px; }
-      html #app .section ul li, body #app .section ul li {
-        width: 28px;
-        height: 28px;
-        margin-top: 40px; }
-        html #app .section ul li img, body #app .section ul li img {
-          width: 24px;
-          transition: width .3s; }
-        html #app .section ul li img:hover, body #app .section ul li img:hover {
-          width: 28px;
-          cursor: pointer; }
-  html #app .main, body #app .main {
-    position: absolute;
+  html #app, body #app {
     width: 100%;
-    padding: 0;
-    left: 110px; }
-    html #app .main .headercontent, body #app .main .headercontent {
+    margin: 0; }
+    html #app .section, body #app .section {
+      position: fixed;
+      width: 120px;
+      height: 700px;
+      padding: 1rem;
+      background-color: #FCFCFC;
+      box-shadow: 2px 0 4px rgba(157, 168, 190, 0.5);
+      z-index: 1; }
+      html #app .section #logo, body #app .section #logo {
+        display: block;
+        margin: 15px auto 0 auto;
+        transition: width .3s; }
+      html #app .section #logo:hover, body #app .section #logo:hover {
+        width: 70px;
+        cursor: pointer; }
+      html #app .section ul, body #app .section ul {
+        position: absolute;
+        width: 28px;
+        height: 240px;
+        top: 385px; }
+        html #app .section ul li, body #app .section ul li {
+          width: 28px;
+          height: 28px;
+          margin-top: 40px; }
+          html #app .section ul li img, body #app .section ul li img {
+            width: 24px;
+            transition: width .3s; }
+          html #app .section ul li img:hover, body #app .section ul li img:hover {
+            width: 28px;
+            cursor: pointer; }
+    html #app .main, body #app .main {
+      position: absolute;
       width: 100%;
-      height: 300px;
-      box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5);
-      background-color: #FCFCFC; }
-      html #app .main .headercontent .level, body #app .main .headercontent .level {
-        position: absolute;
-        width: 266px;
-        height: 46px;
-        left: 750px;
-        top: 12px;
-        font-size: 1.5rem;
-        font-weight: 500; }
-        html #app .main .headercontent .level .level-right a, body #app .main .headercontent .level .level-right a {
-          color: #1A1A4C;
-          text-decoration: none;
-          margin-left: 48px; }
-        html #app .main .headercontent .level .level-right a:hover, body #app .main .headercontent .level .level-right a:hover {
-          font-weight: 600; }
-    html #app .main #unicorn, body #app .main #unicorn {
-      width: 400px;
-      margin: 56px 0 0 135px;
-      font-weight: bold;
-      font-size: 6rem;
-      line-height: 81px;
-      color: #1A1A4C;
-      cursor: default; }
-    html #app .main .unicornImg, body #app .main .unicornImg {
-      width: 300px;
-      height: 300px;
-      border-radius: 8px;
-      padding: 102px;
-      background-color: #E92042;
-      margin: 119px 0 0px 90px;
-      box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5); }
-    html #app .main .level .content-element1, body #app .main .level .content-element1 {
-      position: absolute;
-      width: 476px;
-      height: 216px;
-      left: 150px;
-      top: 386px; }
-      html #app .main .level .content-element1 .card1, body #app .main .level .content-element1 .card1 {
-        display: flex;
-        position: absolute;
-        width: 360px;
-        height: 96px;
-        background: #FCFCFC;
-        box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
-        border-radius: 8px;
-        padding: 20px; }
-        html #app .main .level .content-element1 .card1 img, body #app .main .level .content-element1 .card1 img {
-          width: 48px;
-          height: 48px;
-          margin-left: 5px; }
-        html #app .main .level .content-element1 .card1 div, body #app .main .level .content-element1 .card1 div {
-          margin-left: 25px; }
-          html #app .main .level .content-element1 .card1 div p, body #app .main .level .content-element1 .card1 div p {
-            font-size: 1.5rem;
+      padding: 0;
+      left: 110px; }
+      html #app .main .headercontent, body #app .main .headercontent {
+        width: 100%;
+        height: 300px;
+        box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5);
+        background-color: #FCFCFC; }
+        html #app .main .headercontent .level, body #app .main .headercontent .level {
+          position: absolute;
+          width: 266px;
+          height: 46px;
+          left: 750px;
+          top: 12px;
+          font-size: 1.5rem;
+          font-weight: 500; }
+          html #app .main .headercontent .level .level-right a, body #app .main .headercontent .level .level-right a {
             color: #1A1A4C;
-            cursor: default; }
-          html #app .main .level .content-element1 .card1 div .p1, body #app .main .level .content-element1 .card1 div .p1 {
-            font-weight: bold;
-            cursor: default; }
-      html #app .main .level .content-element1 .card2, body #app .main .level .content-element1 .card2 {
-        display: flex;
-        position: absolute;
-        width: 360px;
-        height: 96px;
-        top: 120px;
-        background: #FCFCFC;
-        box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+            text-decoration: none;
+            margin-left: 48px; }
+          html #app .main .headercontent .level .level-right a:hover, body #app .main .headercontent .level .level-right a:hover {
+            font-weight: 600; }
+      html #app .main #unicorn, body #app .main #unicorn {
+        width: 400px;
+        margin: 56px 0 0 135px;
+        font-weight: bold;
+        font-size: 6rem;
+        line-height: 81px;
+        color: #1A1A4C;
+        cursor: default; }
+      html #app .main .unicornImg, body #app .main .unicornImg {
+        width: 300px;
+        height: 300px;
         border-radius: 8px;
-        padding: 20px; }
-        html #app .main .level .content-element1 .card2 img, body #app .main .level .content-element1 .card2 img {
-          width: 48px;
-          height: 48px;
-          margin-left: 5px; }
-        html #app .main .level .content-element1 .card2 div, body #app .main .level .content-element1 .card2 div {
-          margin-left: 25px; }
-          html #app .main .level .content-element1 .card2 div p, body #app .main .level .content-element1 .card2 div p {
-            font-size: 1.5rem;
-            color: #1A1A4C;
-            cursor: default; }
-          html #app .main .level .content-element1 .card2 div .p1, body #app .main .level .content-element1 .card2 div .p1 {
-            font-weight: bold;
-            cursor: default; }
-    html #app .main .level .content-element2, body #app .main .level .content-element2 {
-      position: absolute;
-      width: 717px;
-      height: 433px;
-      top: 570px; }
-      html #app .main .level .content-element2 img, body #app .main .level .content-element2 img {
-        margin-left: 578px;
-        animation: float 3s ease-in-out infinite; }
+        padding: 102px;
+        background-color: #E92042;
+        margin: 119px 0 0 90px;
+        box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5); }
+      html #app .main .level .content-element1, body #app .main .level .content-element1 {
+        position: absolute;
+        width: 476px;
+        height: 216px;
+        left: 150px;
+        top: 386px; }
+        html #app .main .level .content-element1 .card1, body #app .main .level .content-element1 .card1 {
+          display: flex;
+          position: absolute;
+          width: 360px;
+          height: 96px;
+          background: #FCFCFC;
+          box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+          border-radius: 8px;
+          padding: 20px; }
+          html #app .main .level .content-element1 .card1 img, body #app .main .level .content-element1 .card1 img {
+            width: 48px;
+            height: 48px;
+            margin-left: 5px; }
+          html #app .main .level .content-element1 .card1 div, body #app .main .level .content-element1 .card1 div {
+            margin-left: 25px; }
+            html #app .main .level .content-element1 .card1 div p, body #app .main .level .content-element1 .card1 div p {
+              font-size: 1.5rem;
+              color: #1A1A4C;
+              cursor: default; }
+            html #app .main .level .content-element1 .card1 div .p1, body #app .main .level .content-element1 .card1 div .p1 {
+              font-weight: bold;
+              cursor: default; }
+        html #app .main .level .content-element1 .card2, body #app .main .level .content-element1 .card2 {
+          display: flex;
+          position: absolute;
+          width: 360px;
+          height: 96px;
+          top: 120px;
+          background: #FCFCFC;
+          box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+          border-radius: 8px;
+          padding: 20px; }
+          html #app .main .level .content-element1 .card2 img, body #app .main .level .content-element1 .card2 img {
+            width: 48px;
+            height: 48px;
+            margin-left: 5px; }
+          html #app .main .level .content-element1 .card2 div, body #app .main .level .content-element1 .card2 div {
+            margin-left: 25px; }
+            html #app .main .level .content-element1 .card2 div p, body #app .main .level .content-element1 .card2 div p {
+              font-size: 1.5rem;
+              color: #1A1A4C;
+              cursor: default; }
+            html #app .main .level .content-element1 .card2 div .p1, body #app .main .level .content-element1 .card2 div .p1 {
+              font-weight: bold;
+              cursor: default; }
+      html #app .main .level .content-element2, body #app .main .level .content-element2 {
+        position: absolute;
+        width: 717px;
+        height: 433px;
+        top: 570px; }
+        html #app .main .level .content-element2 img, body #app .main .level .content-element2 img {
+          margin-left: 578px;
+          animation: float 3s ease-in-out infinite; }
 @keyframes float {
   0% {
     transform: translateY(0); }
@@ -139,55 +143,55 @@ html, body {
     transform: translateY(2.5rem); }
   100% {
     transform: translateY(0); } }
-      html #app .main .level .content-element2 p, body #app .main .level .content-element2 p {
-        font-weight: bold;
-        font-size: 3.5rem;
-        color: #1A1A4C;
-        cursor: default; }
-      html #app .main .level .content-element2 .card3, body #app .main .level .content-element2 .card3 {
-        width: 476px;
-        height: 188px;
-        left: 240px;
-        top: 216px;
-        background: #FCFCFC;
-        box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
-        border-radius: 8px;
-        padding: 25px;
-        margin-top: 24px; }
-        html #app .main .level .content-element2 .card3 p, body #app .main .level .content-element2 .card3 p {
-          font-weight: 500;
-          font-size: 1.5rem;
-          line-height: 32px;
-          cursor: default; }
-        html #app .main .level .content-element2 .card3 .p2, body #app .main .level .content-element2 .card3 .p2 {
+        html #app .main .level .content-element2 p, body #app .main .level .content-element2 p {
           font-weight: bold;
-          font-size: 1.5rem;
-          line-height: 32px;
-          margin-left: 20px;
+          font-size: 3.5rem;
+          color: #1A1A4C;
           cursor: default; }
-    html #app .main .level .content-element3, body #app .main .level .content-element3 {
-      position: absolute;
-      width: 676px;
-      height: 339px;
-      left: 240px;
-      top: 1120px;
-      text-align: center; }
-      html #app .main .level .content-element3 div, body #app .main .level .content-element3 div {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 16px; }
-        html #app .main .level .content-element3 div div, body #app .main .level .content-element3 div div {
-          display: flex;
-          align-items: center;
-          width: 300px;
-          height: 250px;
-          background: #0D0139;
+        html #app .main .level .content-element2 .card3, body #app .main .level .content-element2 .card3 {
+          width: 476px;
+          height: 188px;
+          left: 240px;
+          top: 216px;
+          background: #FCFCFC;
           box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
-          border-radius: 8px; }
-        html #app .main .level .content-element3 div div:hover, body #app .main .level .content-element3 div div:hover {
-          -webkit-animation: pulse;
-          animation: pulse 1s ease-out infinite;
-          cursor: pointer; }
+          border-radius: 8px;
+          padding: 25px;
+          margin-top: 24px; }
+          html #app .main .level .content-element2 .card3 p, body #app .main .level .content-element2 .card3 p {
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 32px;
+            cursor: default; }
+          html #app .main .level .content-element2 .card3 .p2, body #app .main .level .content-element2 .card3 .p2 {
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 32px;
+            margin-left: 20px;
+            cursor: default; }
+      html #app .main .level .content-element3, body #app .main .level .content-element3 {
+        position: absolute;
+        width: 676px;
+        height: 339px;
+        left: 240px;
+        top: 1120px;
+        text-align: center; }
+        html #app .main .level .content-element3 div, body #app .main .level .content-element3 div {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 16px; }
+          html #app .main .level .content-element3 div div, body #app .main .level .content-element3 div div {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            height: 250px;
+            background: #0D0139;
+            box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+            border-radius: 8px; }
+          html #app .main .level .content-element3 div div:hover, body #app .main .level .content-element3 div div:hover {
+            -webkit-animation: pulse;
+            animation: pulse 1s ease-out infinite;
+            cursor: pointer; }
 @-webkit-keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -202,148 +206,146 @@ html, body {
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05); } }
-      html #app .main .level .content-element3 p, body #app .main .level .content-element3 p {
-        font-weight: bold;
-        font-size: 3.5rem;
-        color: #1A1A4C;
-        cursor: default; }
-    html #app .main footer, body #app .main footer {
-      position: absolute;
-      width: 100%;
-      height: 40px;
-      top: 1568px;
-      background: #E92042;
-      text-align: center; }
-      html #app .main footer p, body #app .main footer p {
-        font-size: 1.5rem;
-        line-height: 40px;
-        font-weight: bold;
-        color: #1A1A4C;
-        cursor: default; }
-        html #app .main footer p a, body #app .main footer p a {
-          color: #FFFFFF; }
-  @media (max-width: 414px) {
-    html #app, body #app {
-      width: 100%; }
-      html #app .section, body #app .section {
-        position: absolute;
-        width: 100%;
-        height: 115px;
-        padding: 1rem;
-        background-color: #FCFCFC;
-        box-shadow: 2px 0 4px rgba(157, 168, 190, 0.5);
-        z-index: 1; }
-        html #app .section ul, body #app .section ul {
-          display: flex;
-          justify-content: space-evenly;
-          width: 100%;
-          height: 100px;
-          top: 115px; }
-          html #app .section ul li, body #app .section ul li {
-            width: 28px;
-            height: 28px; }
-            html #app .section ul li img, body #app .section ul li img {
-              width: 24px;
-              transition: width .3s; }
-            html #app .section ul li img:hover, body #app .section ul li img:hover {
-              width: 28px;
-              cursor: pointer; }
-      html #app .main, body #app .main {
-        position: absolute;
-        width: 100%;
-        padding: 0;
-        left: 0;
-        top: 230px; }
-        html #app .main .headercontent, body #app .main .headercontent {
-          width: 100%;
-          height: 200px;
-          box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5);
-          background-color: #FCFCFC; }
-          html #app .main .headercontent .level, body #app .main .headercontent .level {
-            display: none; }
-          html #app .main .headercontent #headertitle, body #app .main .headercontent #headertitle {
-            width: 100%;
-            margin: 0; }
-        html #app .main #unicorn, body #app .main #unicorn {
-          width: 400px;
-          margin: 0;
-          text-align: center;
+        html #app .main .level .content-element3 p, body #app .main .level .content-element3 p {
           font-weight: bold;
-          font-size: 2.5rem;
+          font-size: 3.5rem;
           color: #1A1A4C;
           cursor: default; }
-        html #app .main .unicornImg, body #app .main .unicornImg {
-          width: 200px;
-          height: 200px;
-          border-radius: 8px;
-          padding: 50px;
-          background-color: #E92042;
-          margin: 5px auto 0 auto;
-          box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5); }
-        html #app .main .level .content-element1, body #app .main .level .content-element1 {
+      html #app .main footer, body #app .main footer {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        top: 1568px;
+        background: #E92042;
+        text-align: center; }
+        html #app .main footer p, body #app .main footer p {
+          font-size: 1.5rem;
+          line-height: 40px;
+          font-weight: bold;
+          color: #1A1A4C;
+          cursor: default; }
+          html #app .main footer p a, body #app .main footer p a {
+            color: #FFFFFF; }
+  @media (max-width: 414px) {
+    html #app .section, body #app .section {
+      position: absolute;
+      width: 100%;
+      height: 115px;
+      padding: 1rem;
+      background-color: #FCFCFC;
+      box-shadow: 2px 0 4px rgba(157, 168, 190, 0.5);
+      z-index: 1; }
+      html #app .section ul, body #app .section ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100px;
+        top: 115px; }
+        html #app .section ul li, body #app .section ul li {
+          width: 28px;
+          height: 28px; }
+          html #app .section ul li img, body #app .section ul li img {
+            width: 24px;
+            transition: width .3s; }
+          html #app .section ul li img:hover, body #app .section ul li img:hover {
+            width: 28px;
+            cursor: pointer; }
+    html #app .main, body #app .main {
+      position: absolute;
+      width: 100%;
+      padding: 0;
+      left: 0;
+      top: 230px; }
+      html #app .main .headercontent, body #app .main .headercontent {
+        width: 100%;
+        height: 200px;
+        box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5);
+        background-color: #FCFCFC; }
+        html #app .main .headercontent .level, body #app .main .headercontent .level {
+          display: none; }
+        html #app .main .headercontent #headertitle, body #app .main .headercontent #headertitle {
+          width: 100%;
+          margin: 0; }
+      html #app .main #unicorn, body #app .main #unicorn {
+        width: 400px;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #1A1A4C;
+        cursor: default; }
+      html #app .main .unicornImg, body #app .main .unicornImg {
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+        padding: 50px;
+        background-color: #E92042;
+        margin: 5px auto 0 auto;
+        box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5); }
+      html #app .main .level .content-element1, body #app .main .level .content-element1 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 216px;
+        left: 0;
+        top: 320px; }
+        html #app .main .level .content-element1 .card1, body #app .main .level .content-element1 .card1 {
           display: flex;
-          justify-content: center;
           position: absolute;
-          width: 100%;
-          height: 216px;
-          left: 0;
-          top: 320px; }
-          html #app .main .level .content-element1 .card1, body #app .main .level .content-element1 .card1 {
-            display: flex;
-            position: absolute;
-            width: 360px;
-            height: 96px;
-            background: #FCFCFC;
-            box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
-            border-radius: 8px;
-            padding: 20px; }
-            html #app .main .level .content-element1 .card1 img, body #app .main .level .content-element1 .card1 img {
-              width: 48px;
-              height: 48px;
-              margin-left: 5px; }
-            html #app .main .level .content-element1 .card1 div, body #app .main .level .content-element1 .card1 div {
-              margin-left: 25px; }
-              html #app .main .level .content-element1 .card1 div p, body #app .main .level .content-element1 .card1 div p {
-                font-size: 1.5rem;
-                color: #1A1A4C;
-                cursor: default; }
-              html #app .main .level .content-element1 .card1 div .p1, body #app .main .level .content-element1 .card1 div .p1 {
-                font-weight: bold;
-                cursor: default; }
-          html #app .main .level .content-element1 .card2, body #app .main .level .content-element1 .card2 {
-            display: flex;
-            position: absolute;
-            width: 360px;
-            height: 96px;
-            margin: auto;
-            top: 120px;
-            background: #FCFCFC;
-            box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
-            border-radius: 8px;
-            padding: 20px; }
-            html #app .main .level .content-element1 .card2 img, body #app .main .level .content-element1 .card2 img {
-              width: 48px;
-              height: 48px;
-              margin-left: 5px; }
-            html #app .main .level .content-element1 .card2 div, body #app .main .level .content-element1 .card2 div {
-              margin-left: 25px; }
-              html #app .main .level .content-element1 .card2 div p, body #app .main .level .content-element1 .card2 div p {
-                font-size: 1.5rem;
-                color: #1A1A4C;
-                cursor: default; }
-              html #app .main .level .content-element1 .card2 div .p1, body #app .main .level .content-element1 .card2 div .p1 {
-                font-weight: bold;
-                cursor: default; }
-        html #app .main .level .content-element2, body #app .main .level .content-element2 {
-          width: 100%;
-          height: 433px;
-          top: 570px; }
-          html #app .main .level .content-element2 img, body #app .main .level .content-element2 img {
-            display: block;
-            width: 140px;
-            height: 140px;
-            margin: auto;
-            animation: float 3s ease-in-out infinite; }
+          width: 360px;
+          height: 96px;
+          background: #FCFCFC;
+          box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+          border-radius: 8px;
+          padding: 20px; }
+          html #app .main .level .content-element1 .card1 img, body #app .main .level .content-element1 .card1 img {
+            width: 48px;
+            height: 48px;
+            margin-left: 5px; }
+          html #app .main .level .content-element1 .card1 div, body #app .main .level .content-element1 .card1 div {
+            margin-left: 25px; }
+            html #app .main .level .content-element1 .card1 div p, body #app .main .level .content-element1 .card1 div p {
+              font-size: 1.5rem;
+              color: #1A1A4C;
+              cursor: default; }
+            html #app .main .level .content-element1 .card1 div .p1, body #app .main .level .content-element1 .card1 div .p1 {
+              font-weight: bold;
+              cursor: default; }
+        html #app .main .level .content-element1 .card2, body #app .main .level .content-element1 .card2 {
+          display: flex;
+          position: absolute;
+          width: 360px;
+          height: 96px;
+          margin: auto;
+          top: 120px;
+          background: #FCFCFC;
+          box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+          border-radius: 8px;
+          padding: 20px; }
+          html #app .main .level .content-element1 .card2 img, body #app .main .level .content-element1 .card2 img {
+            width: 48px;
+            height: 48px;
+            margin-left: 5px; }
+          html #app .main .level .content-element1 .card2 div, body #app .main .level .content-element1 .card2 div {
+            margin-left: 25px; }
+            html #app .main .level .content-element1 .card2 div p, body #app .main .level .content-element1 .card2 div p {
+              font-size: 1.5rem;
+              color: #1A1A4C;
+              cursor: default; }
+            html #app .main .level .content-element1 .card2 div .p1, body #app .main .level .content-element1 .card2 div .p1 {
+              font-weight: bold;
+              cursor: default; }
+      html #app .main .level .content-element2, body #app .main .level .content-element2 {
+        width: 100%;
+        height: 433px;
+        top: 570px; }
+        html #app .main .level .content-element2 img, body #app .main .level .content-element2 img {
+          display: block;
+          width: 140px;
+          height: 140px;
+          margin: auto;
+          animation: float 3s ease-in-out infinite; }
     @keyframes float {
       0% {
         transform: translateY(0); }
@@ -351,58 +353,58 @@ html, body {
         transform: translateY(2.5rem); }
       100% {
         transform: translateY(0); } }
-          html #app .main .level .content-element2 #aboutMe, body #app .main .level .content-element2 #aboutMe {
-            margin-top: 60px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 3.5rem;
-            color: #1A1A4C;
+        html #app .main .level .content-element2 #aboutMe, body #app .main .level .content-element2 #aboutMe {
+          margin-top: 60px;
+          text-align: center;
+          font-weight: bold;
+          font-size: 3.5rem;
+          color: #1A1A4C;
+          cursor: default; }
+        html #app .main .level .content-element2 .card3, body #app .main .level .content-element2 .card3 {
+          width: 360px;
+          height: 240px;
+          margin: auto;
+          top: 216px;
+          background: #FCFCFC;
+          box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+          border-radius: 8px;
+          padding: 25px;
+          margin-top: 24px; }
+          html #app .main .level .content-element2 .card3 p, body #app .main .level .content-element2 .card3 p {
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 32px;
             cursor: default; }
-          html #app .main .level .content-element2 .card3, body #app .main .level .content-element2 .card3 {
-            width: 360px;
-            height: 240px;
-            margin: auto;
-            top: 216px;
-            background: #FCFCFC;
-            box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
-            border-radius: 8px;
-            padding: 25px;
-            margin-top: 24px; }
-            html #app .main .level .content-element2 .card3 p, body #app .main .level .content-element2 .card3 p {
-              font-weight: 500;
-              font-size: 1.5rem;
-              line-height: 32px;
-              cursor: default; }
-            html #app .main .level .content-element2 .card3 .p2, body #app .main .level .content-element2 .card3 .p2 {
-              font-weight: bold;
-              font-size: 1.5rem;
-              line-height: 32px;
-              margin-left: 20px;
-              cursor: default; }
-        html #app .main .level .content-element3, body #app .main .level .content-element3 {
-          position: absolute;
-          width: 100%;
-          height: 339px;
-          left: 0;
-          top: 1120px;
-          text-align: center; }
-          html #app .main .level .content-element3 div, body #app .main .level .content-element3 div {
+          html #app .main .level .content-element2 .card3 .p2, body #app .main .level .content-element2 .card3 .p2 {
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 32px;
+            margin-left: 20px;
+            cursor: default; }
+      html #app .main .level .content-element3, body #app .main .level .content-element3 {
+        position: absolute;
+        width: 100%;
+        height: 339px;
+        left: 0;
+        top: 1120px;
+        text-align: center; }
+        html #app .main .level .content-element3 div, body #app .main .level .content-element3 div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin-top: 16px; }
+          html #app .main .level .content-element3 div div, body #app .main .level .content-element3 div div {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 16px; }
-            html #app .main .level .content-element3 div div, body #app .main .level .content-element3 div div {
-              display: flex;
-              align-items: center;
-              width: 300px;
-              height: 250px;
-              background: #0D0139;
-              box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
-              border-radius: 8px; }
-            html #app .main .level .content-element3 div div:hover, body #app .main .level .content-element3 div div:hover {
-              -webkit-animation: pulse;
-              animation: pulse 1s ease-out infinite;
-              cursor: pointer; }
+            align-items: center;
+            width: 300px;
+            height: 250px;
+            background: #0D0139;
+            box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+            border-radius: 8px; }
+          html #app .main .level .content-element3 div div:hover, body #app .main .level .content-element3 div div:hover {
+            -webkit-animation: pulse;
+            animation: pulse 1s ease-out infinite;
+            cursor: pointer; }
     @-webkit-keyframes pulse {
       from {
         -webkit-transform: scale3d(1, 1, 1);
@@ -417,26 +419,26 @@ html, body {
       50% {
         -webkit-transform: scale3d(1.05, 1.05, 1.05);
         transform: scale3d(1.05, 1.05, 1.05); } }
-          html #app .main .level .content-element3 p, body #app .main .level .content-element3 p {
-            font-weight: bold;
-            font-size: 3.5rem;
-            color: #1A1A4C;
-            cursor: default; }
-        html #app .main footer, body #app .main footer {
-          position: absolute;
-          width: 100%;
-          height: 40px;
-          top: 1770px;
-          background: #E92042;
-          text-align: center; }
-          html #app .main footer p, body #app .main footer p {
-            font-size: 1.2rem;
-            line-height: 40px;
-            font-weight: bold;
-            color: #1A1A4C;
-            cursor: default; }
-            html #app .main footer p a, body #app .main footer p a {
-              color: #FFFFFF; } }
+        html #app .main .level .content-element3 p, body #app .main .level .content-element3 p {
+          font-weight: bold;
+          font-size: 3.5rem;
+          color: #1A1A4C;
+          cursor: default; }
+      html #app .main footer, body #app .main footer {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        top: 1770px;
+        background: #E92042;
+        text-align: center; }
+        html #app .main footer p, body #app .main footer p {
+          font-size: 1.2rem;
+          line-height: 40px;
+          font-weight: bold;
+          color: #1A1A4C;
+          cursor: default; }
+          html #app .main footer p a, body #app .main footer p a {
+            color: #FFFFFF; } }
   @media (min-width: 415px) {
     html .card2, body .card2 {
       left: 115px; }

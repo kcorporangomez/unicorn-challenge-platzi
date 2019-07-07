@@ -1,12 +1,13 @@
 html, body {
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Dosis', sans-serif;
   font-size: 12px;
   background-color: #F7FCFF;
   scroll-behavior: smooth; }
   html #app, body #app {
-    width: 100%;
-    margin: 0; }
+    margin: auto; }
     html #app .section, body #app .section {
       position: fixed;
       width: 120px;
@@ -236,26 +237,13 @@ html, body {
       box-shadow: 2px 0 4px rgba(157, 168, 190, 0.5);
       z-index: 1; }
       html #app .section ul, body #app .section ul {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        height: 100px;
-        top: 115px; }
-        html #app .section ul li, body #app .section ul li {
-          width: 28px;
-          height: 28px; }
-          html #app .section ul li img, body #app .section ul li img {
-            width: 24px;
-            transition: width .3s; }
-          html #app .section ul li img:hover, body #app .section ul li img:hover {
-            width: 28px;
-            cursor: pointer; }
+        display: none; }
     html #app .main, body #app .main {
       position: absolute;
       width: 100%;
       padding: 0;
       left: 0;
-      top: 230px; }
+      top: 115px; }
       html #app .main .headercontent, body #app .main .headercontent {
         width: 100%;
         height: 200px;
@@ -445,7 +433,7 @@ html, body {
     html .content-element2, body .content-element2 {
       left: 150px; }
     html ul, body ul {
-      left: 53px; } }
+      left: 47px; } }
   @media (max-width: 1023px) {
     html .section, body .section {
       background-color: yellow; } }

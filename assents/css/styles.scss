@@ -993,6 +993,7 @@ html, body {
           text-align: center;
           font-weight: bold;
           font-size: 2.5rem;
+          line-height: 1rem;
           color: #1A1A4C;
           cursor: default;
         }
@@ -1226,7 +1227,7 @@ html, body {
           text-align: center;
 
           p {
-            font-size: 1.2rem;
+            font-size: 0.8rem;
             line-height: 40px;
             font-weight: bold;
             color: $primary-color;

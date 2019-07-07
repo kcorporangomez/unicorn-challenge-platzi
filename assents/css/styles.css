@@ -667,6 +667,7 @@ html, body {
         text-align: center;
         font-weight: bold;
         font-size: 2.5rem;
+        line-height: 1rem;
         color: #1A1A4C;
         cursor: default; }
       html #app .main .unicornImg, body #app .main .unicornImg {
@@ -827,7 +828,7 @@ html, body {
         background: #E92042;
         text-align: center; }
         html #app .main footer p, body #app .main footer p {
-          font-size: 1.2rem;
+          font-size: 0.8rem;
           line-height: 40px;
           font-weight: bold;
           color: #1A1A4C;

@@ -35,8 +35,8 @@ html, body {
         position: absolute;
         width: 28px;
         height: 240px;
-        left: 46px;
-        top: 350px;
+        left: 53px;
+        top: 385px;
 
         li {
           width: 28px;
@@ -60,7 +60,7 @@ html, body {
       position: absolute;
       width: 100%;
       padding: 0;
-      left: 120px;
+      left: 110px;
 
       .headercontent {
         width: 100%;
@@ -270,6 +270,37 @@ html, body {
               background: $third-color;
               box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
               border-radius: 8px;
+            }
+
+            div:hover{
+              -webkit-animation: pulse;
+              animation: pulse 1s ease-out infinite;
+              cursor: pointer;
+            }
+
+            @-webkit-keyframes pulse {
+              from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+
+              50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+              }
+
+            }
+
+            @keyframes pulse {
+              from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+
+              50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+              }
             }
 
           }

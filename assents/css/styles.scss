@@ -35,7 +35,6 @@ html, body {
         position: absolute;
         width: 28px;
         height: 240px;
-        left: 53px;
         top: 385px;
 
         li {
@@ -92,6 +91,7 @@ html, body {
       }
 
       #unicorn {
+        width: 400px;
         margin: 56px 0 0 135px;
         font-weight: bold;
         font-size: 6rem;
@@ -106,7 +106,7 @@ html, body {
         border-radius: 8px;
         padding: 102px;
         background-color: $secundary-color;
-        margin: 119px 0 0px -120px;
+        margin: 119px 0 0px 90px;
         box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);;
       }
 
@@ -155,7 +155,6 @@ html, body {
             position: absolute;
             width: 360px;
             height: 96px;
-            left: 115px;
             top: 120px;
             background: #FCFCFC;
             box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
@@ -191,7 +190,6 @@ html, body {
           position: absolute;
           width: 717px;
           height: 433px;
-          left: 150px;
           top: 570px;
 
           img {
@@ -337,4 +335,359 @@ html, body {
     }
 
   }
+
+  //mobile
+  @media (max-width: 414px) {
+    #app {
+      .section {
+        position: absolute;
+        width: 100%;
+        height: 115px;
+        padding: 1rem;
+        background-color: $content-color;
+        box-shadow: 2px 0 4px rgba(157, 168, 190, 0.5);
+        z-index: 1;
+
+
+        ul {
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 100px;
+          top: 115px;
+
+          li {
+            width: 28px;
+            height: 28px;
+
+            img {
+              width: 24px;
+              transition: width .3s;
+            }
+
+            img:hover {
+              width: 28px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .main {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        left: 0;
+        top: 230px;
+
+        .headercontent {
+          width: 100%;
+          height: 200px;
+          box-shadow: 3px 4px 8px rgba(157, 168, 190, 0.5);
+          background-color: $content-color;
+
+          .level {
+            display: none;
+          }
+
+          #headertitle {
+            width: 100%;
+            margin: 0;
+          }
+        }
+
+        #unicorn {
+          width: 400px;
+          margin: 0;
+          text-align: center;
+          font-weight: bold;
+          font-size: 2.5rem;
+          color: #1A1A4C;
+          cursor: default;
+        }
+
+        .unicornImg {
+          width: 200px;
+          height: 200px;
+          border-radius: 8px;
+          padding: 50px;
+          background-color: $secundary-color;
+          margin: 5px auto 0 auto;
+          box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);;
+        }
+
+        .level {
+          .content-element1 {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 216px;
+            left: 0;
+            top: 320px;
+
+            .card1 {
+              display: flex;
+              position: absolute;
+              width: 360px;
+              height: 96px;
+              background: #FCFCFC;
+              box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+              border-radius: 8px;
+              padding: 20px;
+
+              img {
+                width: 48px;
+                height: 48px;
+                margin-left: 5px;
+              }
+
+              div {
+                margin-left: 25px;
+
+                p {
+                  font-size: 1.5rem;
+                  color: $primary-color;
+                  cursor: default;
+                }
+
+                .p1 {
+                  font-weight: bold;
+                  cursor: default;
+                }
+              }
+            }
+
+            .card2 {
+              display: flex;
+              position: absolute;
+              width: 360px;
+              height: 96px;
+              margin: auto;
+              top: 120px;
+              background: #FCFCFC;
+              box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+              border-radius: 8px;
+              padding: 20px;
+
+              img {
+                width: 48px;
+                height: 48px;
+                margin-left: 5px;
+              }
+
+              div {
+                margin-left: 25px;
+
+                p {
+                  font-size: 1.5rem;
+                  color: $primary-color;
+                  cursor: default;
+                }
+
+                .p1 {
+                  font-weight: bold;
+                  cursor: default;
+                }
+              }
+            }
+          }
+        }
+
+        .level {
+          .content-element2 {
+            width: 100%;
+            height: 433px;
+            top: 570px;
+
+            img {
+              display: block;
+              width: 140px;
+              height: 140px;
+              margin: auto;
+              animation: float 3s ease-in-out infinite;
+            }
+
+            @keyframes float {
+              0% {
+                transform: translateY(0);
+              }
+
+              65% {
+                transform: translateY(2.5rem);
+              }
+              100% {
+                transform: translateY(0);
+              }
+            }
+
+            #aboutMe {
+              margin-top: 60px;
+              text-align: center;
+              font-weight: bold;
+              font-size: 3.5rem;
+              color: $primary-color;
+              cursor: default;
+            }
+
+            .card3 {
+              width: 360px;
+              height: 240px;
+              margin: auto;
+              top: 216px;
+              background: #FCFCFC;
+              box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+              border-radius: 8px;
+              padding: 25px;
+              margin-top: 24px;
+
+              p {
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 32px;
+                cursor: default;
+              }
+
+              .p2 {
+                font-weight: bold;
+                font-size: 1.5rem;
+                line-height: 32px;
+                margin-left: 20px;
+                cursor: default;
+              }
+            }
+          }
+        }
+
+        .level {
+          .content-element3 {
+            position: absolute;
+            width: 100%;
+            height: 339px;
+            left: 0;
+            top: 1120px;
+            text-align: center;
+
+            div {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              margin-top: 16px;
+
+              div {
+                display: flex;
+                align-items: center;
+                width: 300px;
+                height: 250px;
+                background: $third-color;
+                box-shadow: 0 4px 8px rgba(157, 168, 190, 0.5);
+                border-radius: 8px;
+              }
+
+              div:hover{
+                -webkit-animation: pulse;
+                animation: pulse 1s ease-out infinite;
+                cursor: pointer;
+              }
+
+              @-webkit-keyframes pulse {
+                from {
+                  -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+                }
+
+                50% {
+                  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                  transform: scale3d(1.05, 1.05, 1.05);
+                }
+
+              }
+
+              @keyframes pulse {
+                from {
+                  -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+                }
+
+                50% {
+                  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                  transform: scale3d(1.05, 1.05, 1.05);
+                }
+              }
+
+            }
+
+            p {
+              font-weight: bold;
+              font-size: 3.5rem;
+              color: $primary-color;
+              cursor: default;
+            }
+          }
+        }
+
+        footer {
+          position: absolute;
+          width: 100%;
+          height: 40px;
+          top: 1770px;
+          background: #E92042;
+          text-align: center;
+
+          p {
+            font-size: 1.2rem;
+            line-height: 40px;
+            font-weight: bold;
+            color: $primary-color;
+            cursor: default;
+
+            a {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+@media (min-width: 415px)  {
+  .card2{
+    left: 115px;
+  }
+
+  .content-element2 {
+    left: 150px;
+  }
+
+  ul {
+    left: 53px;
+  }
 }
+  
+  //tablet
+  @media (max-width: 1023px) {
+    .section {
+      background-color: yellow;
+    }
+  }//desktop
+  @media (max-width: 1215px) {
+    .section {
+      background-color: darkseagreen;
+    }
+  }//widescreen
+  @media (max-width: 1407px) {
+    .section {
+      background-color: blue;
+    }
+  }//fullhd
+  @media (max-width: 1408px) {
+    .section {
+      background-color: pink;
+    }
+  }
+
+
+}
+
+
